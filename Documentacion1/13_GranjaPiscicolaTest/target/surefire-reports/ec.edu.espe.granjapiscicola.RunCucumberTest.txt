@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: ec.edu.espe.granjapiscicola.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 38.056 s <<< FAILURE! - in ec.edu.espe.granjapiscicola.RunCucumberTest
-Mostrar Información General.Validar que se ingrese correctamente a la pagina web #1  Time elapsed: 3.607 s  <<< FAILURE!
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 39.37 s <<< FAILURE! - in ec.edu.espe.granjapiscicola.RunCucumberTest
+Mostrar Información General.Validar que se ingrese correctamente a la pagina web  Time elapsed: 3.645 s  <<< FAILURE!
 java.lang.AssertionError: Pagina no válida.
 
-Comunicarse con el vendedor.Validar que se pueda ingresar datos como nombre, correo electronico y comentarios  Time elapsed: 4.365 s  <<< FAILURE!
+Comunicarse con el vendedor.Validar que se pueda ingresar datos como nombre, correo electronico y comentarios  Time elapsed: 4.402 s  <<< FAILURE!
 java.lang.AssertionError: Nombre no válido.
 

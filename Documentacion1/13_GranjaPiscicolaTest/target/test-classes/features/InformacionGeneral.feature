@@ -12,15 +12,6 @@ Feature: Mostrar Información General
       | pagina               |
       | https://youtube.com/ |
 
-  Scenario: Validar que se ingrese correctamente a la pagina web
-    Given Quiero visualizar informacion
-    When Ingreso a la pagina web "<pagina>" visualizo la informacion inicial
-    Then Se debe validar que se ingrese correctamente a la pagina web
-
-    Examples:
-      | pagina                                                                          |
-      | file:///C:/Users/noobp/OneDrive/Escritorio/Desktop/Requisitos%20(1)/Requisitos/Pagina_Inicial.html |
-
 
 
 
