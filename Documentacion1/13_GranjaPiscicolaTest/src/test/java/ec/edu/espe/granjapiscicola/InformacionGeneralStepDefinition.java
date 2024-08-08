@@ -18,6 +18,9 @@ public class InformacionGeneralStepDefinition extends BasicStepDefinition {
     public void quiero_visualizar_informacion() {
         createPDF("Informacion General");
         addText("Inicio de prueba: Quiero mostrar informacion");
+        addText("Como comprador");
+        addText("Quiero visualizar la informacion de la pagina web");
+        addText("Para  conocer el proposito del emprendimiento");
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("file:///C:/Users/noobp/OneDrive/Escritorio/Desktop/Requisitos%20(1)/Requisitos/Pagina_Inicial.html");

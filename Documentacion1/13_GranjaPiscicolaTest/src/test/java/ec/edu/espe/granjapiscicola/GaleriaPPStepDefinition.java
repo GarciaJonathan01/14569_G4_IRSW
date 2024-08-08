@@ -13,6 +13,9 @@ public class GaleriaPPStepDefinition extends BasicStepDefinition {
     public void quiero_verificar_la_galeria_de_procesos() {
         createPDF("Galeria de Procesos de Producción");
         addText("Inicio de prueba: Verificar la galería de procesos.");
+        addText("Como comprador");
+        addText("Quiero poder mostrar informacion galeria de productos");
+        addText("Para dar a conocer los productos del emprendimiento");
 
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
         driver.manage().window().maximize();

@@ -18,6 +18,9 @@ public class CotizacionStepDefinition extends BasicStepDefinition {
     public void quiero_cotizar_productos() {
         createPDF("Cotizacion de productos");
         addText("Inicio de prueba: Cotizar productos.");
+        addText("Como comprador");
+        addText("Quiero poder cotizar productos");
+        addText("Para enviar al vendedor");
 
         try {
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

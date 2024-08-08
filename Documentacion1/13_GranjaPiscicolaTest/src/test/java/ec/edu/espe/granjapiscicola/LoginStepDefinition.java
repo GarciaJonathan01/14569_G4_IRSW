@@ -21,6 +21,9 @@ public class LoginStepDefinition extends BasicStepDefinition {
     public void quiero_comunicarme_con_el_vendedor() {
         createPDF("Comunicacion");
         addText("Inicio de prueba: Quiero comunicarme con el vendedor");
+        addText("Como comprador");
+        addText("Quiero poder comunicarme con el vendedor");
+        addText("Para pedir cualquier tipo de informacion");
 
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
