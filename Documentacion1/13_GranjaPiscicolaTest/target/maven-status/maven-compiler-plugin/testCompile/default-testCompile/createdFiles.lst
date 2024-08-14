@@ -1,5 +1,5 @@
 ec\edu\espe\granjapiscicola\InformacionGeneralStepDefinition.class
 ec\edu\espe\granjapiscicola\BasicStepDefinition.class
 ec\edu\espe\granjapiscicola\LoginStepDefinition.class
-ec\edu\espe\granjapiscicola\RunCucumberTest.class
 ec\edu\espe\granjapiscicola\GaleriaPPStepDefinition.class
+ec\edu\espe\granjapiscicola\RunCucumberTest.class

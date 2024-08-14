@@ -76,21 +76,30 @@ public class CotizacionStepDefinition extends BasicStepDefinition {
     @Then("Se debe validar que los productos se ingresen correctamente en la lista")
     public void se_debe_validar_que_los_productos_se_ingresen_correctamente_en_la_lista() {
         try {
-            WebElement quoteListContainer = driver.findElement(By.id("quoteList"));
-            List<WebElement> quoteItems = quoteListContainer.findElements(By.className("quote-item"));
+            // Localizar el contenedor de la lista de productos cotizados
+            WebElement productListContainer = driver.findElement(By.id("productListItems"));
 
-            if (quoteItems.size() > 0) {
-                addText("La lista de productos cotizados contiene " + quoteItems.size() + " elementos.");
+            // Obtener todos los elementos dentro de la lista
+            List<WebElement> productItems = productListContainer.findElements(By.tagName("li"));
+
+            // Verificar si la lista contiene productos cotizados
+            if (productItems.size() > 0) {
+                addText("La lista de productos cotizados contiene " + productItems.size() + " elementos.");
                 captureScreenShot();
             } else {
                 addText("Error: La lista de productos cotizados está vacía.");
                 captureScreenShot();
                 fail("No se ingresaron productos en la lista.");
+                closePDF();
+                driver.quit();
+
             }
         } catch (Exception e) {
             addText("Error durante la validación de productos en la lista: " + e.getMessage());
             captureScreenShot();
             fail("Ocurrió un error al intentar validar la lista de productos.");
+            driver.quit();
+            closePDF();
         } finally {
             driver.quit();
             closePDF();

@@ -52,7 +52,6 @@ public class LoginStepDefinition extends BasicStepDefinition {
     @Then("Se debe validar que el correcto y el nombre sean correctos")
     public void se_debe_validar_que_el_correcto_y_el_nombre_sean_correctos() {
 
-
         if (isValidEmail(crr)) {
             addText("Correo electrónico validado correctamente.");
         } else {
