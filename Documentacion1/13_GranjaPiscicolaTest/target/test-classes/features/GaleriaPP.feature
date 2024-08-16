@@ -3,7 +3,7 @@ Feature: Mostrar Galeria de Productos
   # Quiero poder mostrar informacion galeria de productos
   # Para dar a conocer los productos del emprendimiento
 
-  Scenario: Verificar que el modal muestra correctamente una imagen
+  Scenario Outline: Verificar que el modal muestra correctamente una imagen
     Given Quiero verificar la galeria de procesos
     When Selecciono una imagen o video de la galeria "<imagen>"
     Then El modal deberia mostrar la imagen o video correctamente
@@ -11,7 +11,7 @@ Feature: Mostrar Galeria de Productos
       | imagen |
       |    1   |
 
-  Scenario: Verificar que el modal muestra correctamente una imagen
+  Scenario Outline: Verificar que el modal muestra correctamente una imagen
     Given Quiero verificar la galeria de procesos
     When Selecciono una imagen o video de la galeria "<imagen>"
     Then El modal deberia mostrar la imagen o video correctamente

@@ -3,7 +3,7 @@ Feature: Mostrar Información General
   # Quiero visualizar la informacion de la pagina web
   # Para  conocer el proposito del emprendimiento
 
-  Scenario: Validar que se ingrese correctamente a la pagina web
+  Scenario Outline: Validar que se ingrese correctamente a la pagina web
     Given Quiero visualizar informacion
     When Ingreso a la pagina web "<pagina>" visualizo la informacion inicial
     Then Se debe validar que se ingrese correctamente a la pagina web
@@ -12,7 +12,7 @@ Feature: Mostrar Información General
       | pagina               |
       | file:///C:/Users/noobp/OneDrive/Escritorio/Requisitos%20(2)/Requisitos/Pagina_Inicial.html |
 
-  Scenario: Validar que se ingrese correctamente a la pagina web
+  Scenario Outline: Validar que se ingrese correctamente a la pagina web
     Given Quiero visualizar informacion
     When Ingreso a la pagina web "<pagina>" visualizo la informacion inicial
     Then Se debe validar que se ingrese correctamente a la pagina web
