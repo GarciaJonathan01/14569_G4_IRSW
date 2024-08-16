@@ -1,10 +1,31 @@
 -------------------------------------------------------------------------------
 Test set: ec.edu.espe.granjapiscicola.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 47.837 s <<< FAILURE! - in ec.edu.espe.granjapiscicola.RunCucumberTest
-Mostrar Información General.Validar que se ingrese correctamente a la pagina web  Time elapsed: 3.329 s  <<< FAILURE!
+Tests run: 14, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 79.975 s <<< FAILURE! - in ec.edu.espe.granjapiscicola.RunCucumberTest
+Cotizar productos.Validar que se pueda ingresar los productos correctamente a la lista #2  Time elapsed: 2.474 s  <<< FAILURE!
+java.lang.AssertionError: No se encontró el botón con el texto: Otro
+
+Cotizar productos enviar.Validar que se pueda enviar la cotizacion #2  Time elapsed: 6.458 s  <<< FAILURE!
+java.lang.AssertionError: Nombre no válido.
+
+Cotizar productos enviar.Validar que se pueda enviar la cotizacion #3  Time elapsed: 6.342 s  <<< FAILURE!
+java.lang.AssertionError: Correo electrónico no válido.
+
+Cotizar productos enviar.Validar que se pueda enviar la cotizacion #4  Time elapsed: 2.428 s  <<< FAILURE!
+java.lang.AssertionError: No se encontró el botón con el texto: otro
+
+Mostrar Galeria de Productos.Verificar que el modal muestra correctamente una imagen #2  Time elapsed: 4.918 s  <<< FAILURE!
+java.lang.AssertionError: El modal no muestra una imagen válida.
+
+Mostrar Información General.Validar que se ingrese correctamente a la pagina web #2  Time elapsed: 8.39 s  <<< FAILURE!
 java.lang.AssertionError: Pagina no válida.
 
-Comunicarse con el vendedor.Validar que se pueda ingresar datos como nombre, correo electronico y comentarios  Time elapsed: 3.363 s  <<< FAILURE!
+Comunicarse con el vendedor.Validar que se pueda ingresar datos como nombre, correo electronico y comentarios  Time elapsed: 5.222 s  <<< FAILURE!
 java.lang.AssertionError: Nombre no válido.
+
+Comunicarse con el vendedor.Validar que se pueda ingresar datos como correo electronico y comentarios #2  Time elapsed: 3.253 s  <<< FAILURE!
+java.lang.AssertionError: Correo electrónico no válido.
+
+Comunicarse con el vendedor.Validar que se pueda ingresar datos como correo electronico y comentarios #3  Time elapsed: 4.944 s  <<< FAILURE!
+java.lang.AssertionError: Correo electrónico no válido.
 

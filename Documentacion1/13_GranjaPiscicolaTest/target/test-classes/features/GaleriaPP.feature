@@ -5,13 +5,19 @@ Feature: Mostrar Galeria de Productos
 
   Scenario: Verificar que el modal muestra correctamente una imagen
     Given Quiero verificar la galeria de procesos
-    When Selecciono una imagen o video de la galeria
+    When Selecciono una imagen o video de la galeria "<imagen>"
     Then El modal deberia mostrar la imagen o video correctamente
+    Examples:
+      | imagen |
+      |    1   |
 
-  Scenario: Navegar entre elementos en el modal
+  Scenario: Verificar que el modal muestra correctamente una imagen
     Given Quiero verificar la galeria de procesos
-    When Selecciono una imagen o video de la galeria
-    Then Debería poder navegar entre los elementos del modal
+    When Selecciono una imagen o video de la galeria "<imagen>"
+    Then El modal deberia mostrar la imagen o video correctamente
+    Examples:
+      | imagen |
+      |    2   |
 
 
 

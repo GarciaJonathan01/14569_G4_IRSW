@@ -20,14 +20,13 @@ public class LoginStepDefinition extends BasicStepDefinition {
     @Given("Quiero comunicarme con el vendedor")
     public void quiero_comunicarme_con_el_vendedor() {
         createPDF("Comunicacion");
-        addText("Inicio de prueba: Quiero comunicarme con el vendedor");
-        addText("Como comprador");
-        addText("Quiero poder comunicarme con el vendedor");
-        addText("Para pedir cualquier tipo de informacion");
+        addText("\t\tInicio de prueba: Requisito Funcional 01.");
+        addText("Como comprador Quiero poder comunicarme con el vendedor Para pedir cualquier tipo de informacion");
+        addText("Ingresamos a la pagina web en la seccion de Contactos");
 
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get("file:///C:/Users/noobp/OneDrive/Escritorio/Desktop/Requisitos%20(1)/Requisitos/Maqueta.html");
+        driver.get("file:///C:/Users/noobp/OneDrive/Escritorio/Requisitos (2)/Requisitos/Maqueta.html");
         captureScreenShot();
     }
     @When("Ingreso el nombre {string} el correo {string} y el comentario {string}")
@@ -56,7 +55,6 @@ public class LoginStepDefinition extends BasicStepDefinition {
             addText("Correo electrónico validado correctamente.");
         } else {
             addText("Correo electrónico no tiene un formato válido: " + crr);
-
             captureScreenShot();
             driver.quit();
             closePDF();
@@ -81,12 +79,10 @@ public class LoginStepDefinition extends BasicStepDefinition {
                 break;
             }
         }
-
+        addText("Con datos correctos ya ingresados el sistema nos lleva al chat del whatsapp del vendedor");
 
         String whatsappUrl = "https://web.whatsapp.com";
-
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
         String currentUrl = driver.getCurrentUrl();
         if (!currentUrl.contains(whatsappUrl)) {
             wait(5);
@@ -102,7 +98,6 @@ public class LoginStepDefinition extends BasicStepDefinition {
             captureScreenShot();
         }
         wait(1);
-        captureScreenShot();
         addText("Fin de la prueba");
         driver.quit();
         closePDF();
