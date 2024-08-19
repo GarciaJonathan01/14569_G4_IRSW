@@ -68,7 +68,7 @@ public class GaleriaPPStepDefinition extends BasicStepDefinition {
                 addText("Fin de la prueba.");
                 driver.quit();
                 closePDF();
-                fail("El modal no muestra una imagen válida.");
+                fail("El modal no muestra una imagen valida.");
             }
         } else {
             addText("Error: El modal no se mostró correctamente.");
@@ -78,6 +78,7 @@ public class GaleriaPPStepDefinition extends BasicStepDefinition {
             closePDF();
             fail("El modal no se muestra correctamente.");
         }
+        addText("Fin de la prueba.");
         driver.quit();
         closePDF();
     }

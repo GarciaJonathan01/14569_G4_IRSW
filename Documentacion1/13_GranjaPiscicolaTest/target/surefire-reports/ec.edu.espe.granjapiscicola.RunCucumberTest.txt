@@ -1,31 +1,31 @@
 -------------------------------------------------------------------------------
 Test set: ec.edu.espe.granjapiscicola.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 73.986 s <<< FAILURE! - in ec.edu.espe.granjapiscicola.RunCucumberTest
-Cotizar productos.Validar que se pueda ingresar los productos correctamente a la lista #2  Time elapsed: 2.476 s  <<< FAILURE!
-java.lang.AssertionError: No se encontró el botón con el texto: Otro
+Tests run: 14, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 67.726 s <<< FAILURE! - in ec.edu.espe.granjapiscicola.RunCucumberTest
+Cotizar productos.Validar que se pueda ingresar los productos correctamente a la lista Failed  Time elapsed: 2.574 s  <<< FAILURE!
+java.lang.AssertionError: No se encontro el boton con el texto: Otro
 
-Cotizar productos enviar.Validar que se pueda enviar la cotizacion #2  Time elapsed: 6.236 s  <<< FAILURE!
-java.lang.AssertionError: Nombre no válido.
+Cotizar productos enviar..Validar que se pueda enviar la cotizacion Failed 1  Time elapsed: 5.998 s  <<< FAILURE!
+java.lang.AssertionError: Nombre no valido.
 
-Cotizar productos enviar.Validar que se pueda enviar la cotizacion #3  Time elapsed: 6.127 s  <<< FAILURE!
-java.lang.AssertionError: Correo electrónico no válido.
+Cotizar productos enviar..Validar que se pueda enviar la cotizacion Failed 2  Time elapsed: 5.974 s  <<< FAILURE!
+java.lang.AssertionError: Correo electronico no valido.
 
-Cotizar productos enviar.Validar que se pueda enviar la cotizacion #4  Time elapsed: 2.321 s  <<< FAILURE!
-java.lang.AssertionError: No se encontró el botón con el texto: otro
+Cotizar productos enviar..Validar que se pueda enviar la cotizacion Failed 3  Time elapsed: 2.361 s  <<< FAILURE!
+java.lang.AssertionError: No se encontro el boton con el texto: otro
 
-Mostrar Galeria de Productos.Verificar que el modal muestra correctamente una imagen #2  Time elapsed: 4.751 s  <<< FAILURE!
-java.lang.AssertionError: El modal no muestra una imagen válida.
+Mostrar Galeria de Productos.Verificar que el modal muestra correctamente una imagen Failed  Time elapsed: 4.644 s  <<< FAILURE!
+java.lang.AssertionError: El modal no muestra una imagen valida.
 
-Mostrar Información General.Validar que se ingrese correctamente a la pagina web #2  Time elapsed: 8.333 s  <<< FAILURE!
-java.lang.AssertionError: Pagina no válida.
+Mostrar Información General.Validar que se ingrese correctamente a la pagina web Failed  Time elapsed: 4.294 s  <<< FAILURE!
+java.lang.AssertionError: Pagina no valida.
 
-Comunicarse con el vendedor.Validar que se pueda ingresar los productos correctamente a la lista  Time elapsed: 3.583 s  <<< FAILURE!
-java.lang.AssertionError: Nombre no válido.
+Comunicarse con el vendedor.Validar que se pueda ingresar datos como nombre, correo electronico y comentarios Failed  Time elapsed: 3.396 s  <<< FAILURE!
+java.lang.AssertionError: Nombre no valido.
 
-Comunicarse con el vendedor.Validar que se pueda ingresar datos como correo electronico y comentarios #2  Time elapsed: 4.599 s  <<< FAILURE!
-java.lang.AssertionError: Correo electrónico no válido.
+Comunicarse con el vendedor.Validar que se pueda ingresar datos como nombre, correo electronico y comentarios Failed 2  Time elapsed: 3.332 s  <<< FAILURE!
+java.lang.AssertionError: Correo electronico no valido.
 
-Comunicarse con el vendedor.Validar que se pueda ingresar datos como correo electronico y comentarios #3  Time elapsed: 2.98 s  <<< FAILURE!
-java.lang.AssertionError: Correo electrónico no válido.
+Comunicarse con el vendedor.Validar que se pueda ingresar datos como nombre, correo electronico y comentarios Failed 3  Time elapsed: 3.2 s  <<< FAILURE!
+java.lang.AssertionError: Correo electronico no valido.
 

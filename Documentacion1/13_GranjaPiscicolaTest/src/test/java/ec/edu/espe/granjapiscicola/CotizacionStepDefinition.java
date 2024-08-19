@@ -34,9 +34,10 @@ public class CotizacionStepDefinition extends BasicStepDefinition {
         } catch (Exception e) {
             addText("Error al cargar la página: " + e.getMessage());
             captureScreenShot();
-            fail("No se pudo cargar la página correctamente.");
             driver.quit();
             closePDF();
+            fail("No se pudo cargar la pagina correctamente.");
+
         }
     }
 
@@ -67,14 +68,14 @@ public class CotizacionStepDefinition extends BasicStepDefinition {
                 addText("Fin de la prueba");
                 driver.quit();
                 closePDF();
-                fail("No se encontró el botón con el texto: " + bot1);
+                fail("No se encontro el boton con el texto: " + bot1);
             }
         } catch (Exception e) {
             addText("Error: No se pudo hacer clic en el botón: " + e.getMessage());
             captureScreenShot();
             driver.quit();
             closePDF();
-            fail("No se pudo hacer clic en el botón.");
+            fail("No se pudo hacer clic en el boton.");
         }
         wait(1);
         captureScreenShot();
@@ -95,17 +96,16 @@ public class CotizacionStepDefinition extends BasicStepDefinition {
             } else {
                 addText("Error: La lista de productos cotizados está vacía.");
                 captureScreenShot();
-                fail("No se ingresaron productos en la lista.");
-                closePDF();
                 driver.quit();
-
+                closePDF();
+                fail("No se ingresaron productos en la lista.");
             }
         } catch (Exception e) {
             addText("Error durante la validación de productos en la lista: " + e.getMessage());
             captureScreenShot();
-            fail("Ocurrió un error al intentar validar la lista de productos.");
             driver.quit();
             closePDF();
+            fail("Ocurrio un error al intentar validar la lista de productos.");
         }
         addText("Fin de la prueba");
         driver.quit();

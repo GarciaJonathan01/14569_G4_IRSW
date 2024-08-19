@@ -58,7 +58,7 @@ public class LoginStepDefinition extends BasicStepDefinition {
             captureScreenShot();
             driver.quit();
             closePDF();
-            fail("Correo electrónico no válido.");
+            fail("Correo electronico no valido.");
         }
         if (isValidName(nam)) {
             addText("Nombre validado correctamente.");
@@ -67,7 +67,7 @@ public class LoginStepDefinition extends BasicStepDefinition {
             captureScreenShot();
             driver.quit();
             closePDF();
-            fail("Nombre no válido.");
+            fail("Nombre no valido.");
         }
 
         String originalWindow = driver.getWindowHandle();
@@ -91,7 +91,7 @@ public class LoginStepDefinition extends BasicStepDefinition {
             addText("Fin de la prueba");
             driver.quit();
             closePDF();
-            fail("No estamos en la página de WhatsApp Web");
+            fail("No estamos en la pagina de WhatsApp Web");
         }else {
             wait(2);
             addText("Ingresado con exito. URL actual: " + currentUrl);
